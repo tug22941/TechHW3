@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Jonah Saywonson</title>
     <style>
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             scroll-behavior: smooth;
         }
 
@@ -77,6 +77,23 @@
         .next a {
             color: rgb(33, 37, 41);
         }
+        .cusFont{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: black;
+        }
+        .spinners{
+            background-color: aliceblue;
+
+            display: flex;
+            justify-content: space-between;
+            max-width: 400px;
+            margin: 0 auto;
+            background: #A0C5E8;
+            padding: 10px 0;
+        }
+        #finish{
+            color: cornflowerblue;
+        }
     </style>
 </head>
 
@@ -135,7 +152,7 @@
             <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
                     title="MongoDB" /></div>
             <div class="col my-3"><img src="images/html.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                title="MongoDB" /></div>
+                title="HTML, CSS, JS" /></div>
 
         </div>
         <div class="row my-4">
@@ -144,6 +161,9 @@
             </div>
             <div class="col">
                 <a href="#courses"><button type="button" class="btn btn-outline">Courses</button></a>
+            </div>
+            <div class="col">
+                <a href="#learning"><button type="button" class="btn btn-outline">Learning</button></a>
             </div>
             <div class="col">
                 <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
@@ -228,9 +248,74 @@
             </div>
         </div>
         <div class="row mt-5 next">
+            <a href="#learning" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Learning"></i></a> </div>
+    </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center cusFont" id="learning">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Learning</h4>
+        </div>
+        <div class="row mx-auto mb-4">
+            <h5 class="display-5 mx-auto faded text-center">Still working on it...</h5>
+        </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <button type="button" class="btn btn-outline-primary btn-lg">Git/Github</button>
+            </div>
+            <div class="col text-center course">
+                <button type="button" class="btn btn-outline-danger btn-lg">Bootstrap</button>
+            </div>
+        </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <button type="button" class="btn btn-outline-secondary btn-lg">ASP.NET</button>
+            </div>
+            <div class="col text-center course">
+                <button type="button" class="btn btn-outline-success btn-lg">Information Process Management</button>
+            </div>
+        </div>
+        <div class="row w-100 justify-content-center my-3">
+            <div class="col text-center course">
+                <button type="button" class="btn btn-outline-warning btn-lg">ECMAScript</button>
+            </div>
+            <div class="col text-center course">
+                <button type="button" class="btn btn-outline-info btn-lg">Database Management Systems</button>
+            </div>
+        </div>
+        <div class="row w-100 my-3">
+            <div class="col spinners">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-secondary" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-success" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-danger" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-info" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-light" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div class="spinner-border text-dark" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-5 next">
             <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
                     title="Contact"></i></a> </div>
     </div>
+
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
@@ -241,12 +326,22 @@
         <div class="row my-4 contacticon">
             <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
                     data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
+            <a href="https://www.linkedin.com" class="col mx-3"><i class="fab fa-linkedin"
                     data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
+            <a href="https://github.com" class="col mx-3"><i class="fab fa-github-square"
                     data-toggle="tooltip" data-placement="top" title="Github"></i></a>
-
         </div>
+
+        <div class="row mt-5 next" id="finish">
+            <div class="alert alert-block">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4 style="text-align: center;">Congratulations!</h4>
+                you have reached the end of our page
+            </div>
+        </div>
+
+        
+
         <div class="row mt-5">
             <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
         </div>
@@ -266,6 +361,9 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
+
+        $(".alert").alert()
+        
     </script>
 </body>
 
